@@ -14,8 +14,8 @@
   .attr("height",500)
   .append("g")
   .attr("transform","translate(50,50)");
-  /*var tree = d3.layout.tree()
-  .size([400,400]);*/
+  var tree = d3.layout.tree()
+  .size([400,400]);
   d3.json("mydata.json",function(data){
   var nodes=tree.nodes(data);
   var links=tree.links(nodes);
